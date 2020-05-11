@@ -38,6 +38,26 @@ class HomePage extends StatelessWidget {
           ctrl: _alcCtrl,
           label: "Álcool",
         ),
+        Container(
+          margin: EdgeInsets.all(30),
+          height: 60,
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.8),
+            borderRadius: BorderRadius.circular(60),
+          ),
+          child: FlatButton(
+            child: Text(
+              "CALCULAR",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Theme.of(context).primaryColor,
+                fontSize: 35,
+                fontFamily: "Big Shoulders Display",
+              ),
+            ),
+            onPressed: () {},
+          ),
+        ),
       ]),
     );
   }
