@@ -6,6 +6,8 @@ import 'package:alcool_gasolina/widgets/sucess.widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 
+import 'pages/home.page.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -19,31 +21,6 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  var _gasCtrl = new MoneyMaskedTextController(leftSymbol: 'R\$ ');
-  var _alcCtrl = new MoneyMaskedTextController(leftSymbol: 'R\$ ');
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
-      body: ListView(children: <Widget>[
-        Logo(),
-        SubmitForm(
-          alcCtrl: _alcCtrl,
-          gasCtrl: _gasCtrl,
-          submitFunc: () {},
-          busy: false,
-        ),
-        // Sucess(
-        //   reset: () {},
-        //   result: "Compensa utilizar X",
-        // ),
-      ]),
     );
   }
 }
