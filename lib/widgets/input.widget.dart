@@ -20,7 +20,7 @@ class Input extends StatelessWidget {
           child: Text(label,
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 45,
+                fontSize: 35,
                 fontFamily: "Big Shoulders Display",
               )),
         ),
@@ -33,7 +33,7 @@ class Input extends StatelessWidget {
             keyboardType: TextInputType.number,
             style: TextStyle(
               color: Colors.white,
-              fontSize: 45,
+              fontSize: 35,
               fontFamily: "Big Shoulders Display",
             ),
             decoration: InputDecoration(

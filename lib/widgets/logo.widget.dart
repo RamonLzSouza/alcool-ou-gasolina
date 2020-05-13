@@ -10,7 +10,7 @@ class Logo extends StatelessWidget {
         ),
         Image.asset(
           "assets/images/aog-white.png",
-          height: 120,
+          height: 100,
         ),
         Text(
           "Álcool ou Gasolina",
